@@ -876,10 +876,10 @@ for (var i = chapters.length - 1; i >= 0; i--) {
 var el = document.getElementById('continue');
 var links = document.querySelectorAll('.title-link');
 if (best) {
-  el.innerHTML = '<a href="' + best.href + '">Continue: ' + best.title + ' &rarr;</a>';
+  el.innerHTML = '<a href="' + best.href + '" style="font-size:1.3rem">Continue: ' + best.title + ' &rarr;</a>';
   links.forEach(function(l) { l.href = best.href; });
 } else {
-  el.innerHTML = '<a href="A0_0/0_0.html">Begin reading &rarr;</a>';
+  el.innerHTML = '<a href="A0_0/0_0.html" style="font-size:1.3rem">Begin reading &rarr;</a>';
   links.forEach(function(l) { l.href = 'A0_0/0_0.html'; });
 }
 </script>
