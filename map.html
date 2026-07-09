@@ -797,7 +797,7 @@ var chapters = [{"title": "0 - Prologue", "href": "A0_0/0_0.html"}, {"title": "T
 
 var html = '';
 for (var i = chapters.length - 1; i >= 0; i--) {
-  if (localStorage.getItem('/' + chapters[i].href)) {
+  if (localStorage.getItem('/' + chapters[i].href.replace(/\.html$/, ''))) {
     html += '<li><a href="' + chapters[i].href + '">' + chapters[i].title + '</a></li>';
   }
 }
@@ -848,7 +848,7 @@ document.getElementById('list').innerHTML = html || '<li style="color:#999">No c
       
     
 <script>
-  try { localStorage.setItem(window.location.pathname, '1'); } catch (e) { }
+  try { localStorage.setItem(window.location.pathname.replace(/\.html$/, ''), '1'); } catch (e) { }
 </script>
 
   </body>
