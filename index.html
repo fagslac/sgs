@@ -870,7 +870,7 @@ var chapters = [{"title": "0 - Prologue", "href": "A0_0/0_0.html"}, {"title": "T
 
 var best = null;
 for (var i = chapters.length - 1; i >= 0; i--) {
-  if (localStorage.getItem('/' + chapters[i].href.replace(/\.html$/, ''))) { best = chapters[i]; break; }
+  if (localStorage.getItem(chapters[i].href.replace(/\.html$/, ''))) { best = chapters[i]; break; }
 }
 
 var el = document.getElementById('continue');
@@ -925,7 +925,9 @@ if (best) {
       
     
 <script>
-  try { localStorage.setItem(window.location.pathname.replace(/\.html$/, ''), '1'); } catch (e) { }
+  
+  try { localStorage.setItem('index', '1'); } catch (e) { }
+  
 </script>
 
   </body>
