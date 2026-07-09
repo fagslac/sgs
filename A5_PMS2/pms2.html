@@ -467,38 +467,51 @@
     border: 1px solid var(--color-pink);
     border-radius: 6px;
     padding: 10px;
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
     text-align: center;
   }
 
-  .calendar_weekday {
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    color: var(--color-pink-light);
-    text-transform: uppercase;
+  .calendar_datecol {
+    flex: 1;
   }
 
-  .calendar_month_day {
+  .calendar_weekday {
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--color-text);
     line-height: 1.2;
-    margin-top: 2px;
     text-shadow: 0 0 8px rgba(255, 95, 160, 0.35);
   }
 
-  .calendar_year {
+  .calendar_month_day {
     font-size: 0.7rem;
     color: var(--color-pink-light);
-    margin-bottom: 6px;
+  }
+
+  .calendar_year {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    text-shadow: 0 0 6px rgba(255, 95, 160, 0.3);
+  }
+
+  .calendar_clockcol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .calendar_clock {
     background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-pink);
     border-radius: 4px;
-    padding: 4px;
+    padding: 8px 10px;
     font-family: "Space Mono", monospace;
-    font-size: 0.85rem;
+    font-size: 1.6rem;
     color: var(--color-pink-light);
+    line-height: 1;
   }
 </style>
 
