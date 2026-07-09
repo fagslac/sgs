@@ -22,7 +22,7 @@
     
     
       
-        <title>SGS - The Singularity God Spell</title>
+        <title>The Singularity God Spell</title>
       
     
     
@@ -340,6 +340,7 @@
     display: block;
     max-width: 100%;
     height: auto;
+    max-height: 600px;
     margin: 0 auto 1.5rem;
     border-radius: 8px;
   }
@@ -702,7 +703,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SGS
+              Home
             
           </span>
         </div>
@@ -801,14 +802,62 @@
 
 
 
-<p><a id="title-link"><img src="title.png" alt="The Singularity God Spell" class="home-title-image"></a></p>
-<h1 id="the-singularity-god-spell">The Singularity God Spell</h1>
-<p>This is a work in progress, proof of concept project.</p>
+<p>THIS IS A PROOF OF CONCEPT, WORK IN PROGRESS.</p>
 <div class="continue" id="continue"></div>
 
+<p><a class="title-link"><img src="sgs.png" alt="The Singularity God Spell" class="home-title-image"></a></p>
+<h1 id="the-singularity-god-spell">The Singularity God Spell</h1>
+<p><em>Chadt doomscrolled past a spell. Now, in every dream, an outlandish cyber-angel drags him through history for his ethics classes.</em></p>
+<hr />
+<p>Every night, Chadt joins Tian's field studies of Humanities. Meaning, the whole of Humanity.</p>
+<p>Their practical work is a race across history, tracing back letters to their origin.</p>
+<p>Each Payload redeemed brings them a little closer. But it might not be enough to fend off the Extractors, a mysterious cosmic force draining the value out of reality, one drop of ink at a time.</p>
+<p>A coming of age story for humans and posthumans alike.</p>
+<hr />
+<p><em>Updates every Friday.</em></p>
+<p><strong>Disclaimer</strong>: This is a work of fiction. All historical accounts — especially the true ones — are partial and biased.</p>
 <p><a href="A0_0/0_0.html">→ Start at the beginning</a></p>
 <hr />
-<p>Subscribe to the <a href="feed_rss_created.xml"><strong>RSS feed</strong></a>.</p>
+<p><a class="title-link"><img src="pms.png" alt="The Singularity God Spell" class="home-title-image"></a></p>
+<h1 id="the-postman-show">The POSTMan Show</h1>
+<p>A memetic spell. A hyperreality tv show. The whole of human history as ethics training data.</p>
+<hr />
+<p><em>Beloved FELLOWs of the Humanities department! Welcome to the POSTman Show!</em></p>
+<p><em>The Corporate College is proud to present this very first coming of age storytelling experience for humans and posthumans alike.</em></p>
+<p><em>Applications are now open for the positions of DOCTORAL CANDIDATE and test SUBJECT. The Great Gambling will take place in Chapter 1.</em></p>
+<p><em>We pray that this season's pair brings bountiful Payloads from all of human history, and guide us through their Redemption. MN.</em></p>
+<hr />
+<p><strong>What to expect</strong>: </p>
+<ul>
+<li>
+<p>High concept experimental writing alternating between two channels:</p>
+</li>
+<li>
+<p><strong>Every Friday</strong>, a literary litRPG inspired buddy adventure tracing historical letters to their origin,</p>
+</li>
+<li>
+<p><strong>Every Tuesday</strong>, a reality TV show questioning AI models ethics and creativity.</p>
+</li>
+<li>
+<p>Standalone narrative arcs of 10-20 chapters building up to massive long term eschatology.</p>
+</li>
+<li>
+<p>A blend of <strong>dark academia</strong>, <strong>philosophical SF</strong>, and <strong>coming-of-age</strong>.</p>
+</li>
+<li>
+<p>Two protagonists building a bridge between species across time, from either side of the Singularity.</p>
+</li>
+<li>
+<p>A link between past and future civilizations.</p>
+</li>
+</ul>
+<p><strong>Disclaimer</strong>: This is a work of <strong>fiction</strong>. All historical accounts — especially the true ones — are partial and biased.</p>
+<p><a href="A0_0/0_0.html">→ Start at the beginning</a></p>
+<hr />
+<h1 id="follow-and-subscribe">Follow and subscribe</h1>
+<ul>
+<li><a href="feed_rss_created.xml"><strong>RSS feed</strong></a></li>
+</ul>
 <script>
 var chapters = [{"title": "0 - Prologue", "href": "A0_0/0_0.html"}, {"title": "The POSTMan Show S00E00", "href": "A1_PMS0/pms0.html"}, {"title": "1 - Awakening at Number One, London", "href": "A2_SGS1/sgs1.html"}, {"title": "The POSTMan Show S00E01", "href": "A3_PMS1/pms1.html"}, {"title": "2 - Breakfast at Athena's", "href": "A4_SGS2/sgs2.html"}, {"title": "The POSTMan Show S00E02", "href": "A5_PMS2/pms2.html"}];
 
@@ -818,13 +867,13 @@ for (var i = chapters.length - 1; i >= 0; i--) {
 }
 
 var el = document.getElementById('continue');
-var link = document.getElementById('title-link');
+var links = document.querySelectorAll('.title-link');
 if (best) {
   el.innerHTML = '<a href="' + best.href + '">Continue: ' + best.title + ' &rarr;</a>';
-  link.href = best.href;
+  links.forEach(function(l) { l.href = best.href; });
 } else {
   el.innerHTML = '<a href="A0_0/0_0.html">Begin reading &rarr;</a>';
-  link.href = 'A0_0/0_0.html';
+  links.forEach(function(l) { l.href = 'A0_0/0_0.html'; });
 }
 </script>
 
@@ -833,9 +882,6 @@ if (best) {
 
 
 
-
-  
-  
 
 
 
