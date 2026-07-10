@@ -207,6 +207,7 @@
     .md-sidebar--secondary:has(.calendarbox, .marqueebox) {
       display: block !important;
       width: 350px;
+      margin-right: 8px;
       align-self: flex-start;
       flex-shrink: 0;
       position: sticky;
@@ -478,7 +479,7 @@
   }
 
   .calendar_weekday {
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--color-text);
     line-height: 1.2;
@@ -491,7 +492,7 @@
   }
 
   .calendar_year {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-text);
     text-shadow: 0 0 6px rgba(255, 95, 160, 0.3);
@@ -511,9 +512,10 @@
     border-radius: 4px;
     padding: 8px 10px;
     font-family: "Space Mono", monospace;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--color-pink-light);
     line-height: 1;
+    letter-spacing: -1px;
   }
 </style>
 
@@ -651,7 +653,11 @@
     }
 
     .mapbox iframe {
-      height: 140px;
+      height: 200px;
+    }
+
+    body .md-content {
+      padding: 1rem 1.5rem;
     }
   }
 </style>
@@ -811,17 +817,31 @@
     <div class="calendar_year">1917</div>
   </div>
   <div class="calendar_clockcol">
-    <div class="calendar_clock">11:45</div>
+    <div class="calendar_clock">12:44</div>
+    <script>
+      (function() {
+        var el = document.currentScript.previousElementSibling;
+        if (!el) return;
+        var base = el.textContent.trim();
+        var s = Math.floor(Math.random() * 60);
+        el.textContent = base + ':' + String(s).padStart(2, '0');
+        s = (s + 1) % 60;
+        setInterval(function() {
+          el.textContent = base + ':' + String(s).padStart(2, '0');
+          s = (s + 1) % 60;
+        }, 1000);
+      })();
+    </script>
   </div>
 </div>
 
 
 <div class="mapbox">
-  <iframe width="100%" height="160" frameborder="0"
+  <iframe width="100%" height="200" frameborder="0"
     src="https://www.openstreetmap.org/export/embed.html?bbox=-0.13765618308064514%2C51.493397940428046%2C-0.11765618308064514%2C51.51339794042804&marker=51.503397940428044%2C-0.12765618308064514">
   </iframe>
-  <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.503397940428044,-0.12765618308064514" target="_blank"
-    rel="noopener noreferrer" class="streetview-link">Open on Google Street View&trade;</a>
+  <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.503397940428044,-0.12765618308064514&heading=270"
+    target="_blank" rel="noopener noreferrer" class="streetview-link">Open on Google Street View&trade;</a>
 </div>
 
 
@@ -866,17 +886,31 @@
     <div class="calendar_year">1917</div>
   </div>
   <div class="calendar_clockcol">
-    <div class="calendar_clock">11:45</div>
+    <div class="calendar_clock">12:44</div>
+    <script>
+      (function() {
+        var el = document.currentScript.previousElementSibling;
+        if (!el) return;
+        var base = el.textContent.trim();
+        var s = Math.floor(Math.random() * 60);
+        el.textContent = base + ':' + String(s).padStart(2, '0');
+        s = (s + 1) % 60;
+        setInterval(function() {
+          el.textContent = base + ':' + String(s).padStart(2, '0');
+          s = (s + 1) % 60;
+        }, 1000);
+      })();
+    </script>
   </div>
 </div>
 
 
 <div class="mapbox">
-  <iframe width="100%" height="160" frameborder="0"
+  <iframe width="100%" height="200" frameborder="0"
     src="https://www.openstreetmap.org/export/embed.html?bbox=-0.13765618308064514%2C51.493397940428046%2C-0.11765618308064514%2C51.51339794042804&marker=51.503397940428044%2C-0.12765618308064514">
   </iframe>
-  <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.503397940428044,-0.12765618308064514" target="_blank"
-    rel="noopener noreferrer" class="streetview-link">Open on Google Street View&trade;</a>
+  <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.503397940428044,-0.12765618308064514&heading=270"
+    target="_blank" rel="noopener noreferrer" class="streetview-link">Open on Google Street View&trade;</a>
 </div>
 
 
@@ -922,8 +956,8 @@
 <p>"Actually, during most of its existence this place was relatively poorly protected. There are of course the fellows at the door."</p>
 <p>Tian gestured towards two black shapes that Chadt had not noticed. The guards seemed to have sedentarized into the wall. Their proportions far exceeded those of normal humans, and their skin resembled stone. They did not seem to breathe.</p>
 <p>"But since we'll be bypassing them, we'll only see staff and ministers, much too busy with their own chores and their own selves to pay us any mind."</p>
-<p>"You're blue and sparkling," observed Chadt dubitative.</p>
-<p>"And you really underestimate how self-involved british gentlemen can get. Still, you're right to be cautious." </p>
+<p>"You're blue and sparkling," observed Chadt dubiously.</p>
+<p>"And you really underestimate how self-involved British gentlemen can get. Still, you're right to be cautious." </p>
 <p>Tian seemed absent for a while. Then the colors of both of their clothes faded to dim, dark shade of grey. They looked almost transparent.</p>
 <p>"I weakened our signal, that should be enough," Tian explained, marching ahead. "Of course, the best way to not get in trouble is to minimize our exposure time. Let's go, they might be signing the letter already."</p>
 <p>"Wait!"</p>
@@ -932,38 +966,67 @@
 <p>Tian seemed surprised by the question</p>
 <p>"I figured you would just wake up."</p>
 <p>Chadt did not know what to say to that. He supposed this was a valid strategy.</p>
-<p>He ran after Tian, who was already pushing the much smaller, much more innocuous door numbered 11. Chadt stared apprehensively as the stone guardians, but they did not move an inch. They might have stood like this for centuries.</p>
-<p>They pass through a series of antichambers that look like museum. It seems quite random and unterminable (dream logic moment). Two paragraphs. Callback to the housemaids, Chadt seems to see them in the corner of his eyes, but they seem to disappear every time he tries to look. Explicit remark that this is not like the rotschild manor because theyre not taking anything.</p>
-<p>They arrive in a House at the back (the term can be verbatim for history nerds). In front of them are the doors of the cabinet room. They hear argument inside. One paragraph.</p>
-<p>They sneak into the room, take their place in a corner, one paragraph. Slip in. Room is tense.</p>
-<p>Chadt registers: "This looks like a normal meeting."</p>
-<p>Description of the room and furniture. one paragraph</p>
-<p>Description of the men inside. one paragraph. "7 british gentlemen"</p>
-<p>description of the prime minister David George standing out, one paragraph. Important to seed him early.</p>
-<p>description of curzon. "one gentlemen was idk standing? how do they do it? and talking vehemently [idk check how he actually was]</p>
-<p>"Thats Georges Curzon, mutters tian. He's the main opponent. They'll beat him before long" (switch to battle vocabulary)</p>
-<p>🦭 Georges Curzon called upon <strong>The Lay Of The Land</strong>: (capitalization of litrpg abilities)</p>
-<p>"You've never been there, Sir balfour, but I have many times. I'm telling you, this land can't sustain more souls."</p>
-<p>description of arthur balfour</p>
-<p>chadt makes mental notes about his target</p>
-<p>🦊 Arthur Balfour counters with <strong>Millenariam Doomsday Cultism</strong>:</p>
-<p>"It won't have to for long. Soon enough, measly secular land wont be a consideration. We're already leading the studies into the beyond. We're playing a much longer game, here, this is about the salvation of souls"</p>
-<p>short paragraph about the raport de force, how things stand. small focus on chadt that notes to himself that a lot changes in a century</p>
-<p>🦭 Curzon takes out a <strong>Census of the Victims</strong>: 
-"You're promising someone else's home"</p>
-<p>🦊 Balfour counters with <strong>Race Theory</strong>:
-"theyre an inferior race. Use verbatims from the research notes"</p>
+<p>He ran after Tian, who was already pushing the much smaller, much more innocuous door numbered 11. Chadt stared apprehensively as the stone guardians, but they did not move an inch. They might as well have been standing for centuries.</p>
+<p>The door opened on an antechamber that looked like a museum. The walls were lined with an orderly grid of portraits of old white men in pompous attire that made it hard to tell them apart. The floor was checkered and slippery.</p>
+<p>On every wall, the same arch opened towards a remarkably identical hall. Same yellow walls, same portraits, same arches that continued in a seemingly infinite recursion.</p>
+<p>"The Halls of Power are easier to navigate when you know the way", commented Tian.</p>
+<p>They turned right, then left, then forward for a while. The echoes of their footsteps and the subtle changes in the artworks around them were the only proof that they had moved at all.</p>
+<p>Chadt quickly lost all sense of direction. The cascade of rooms blurred into a repetitive motif he could not grasp. A couple of times, he thought he saw far in the distance a robed silhouette waving too many metallic fingers. But it all went away as soon as he focused his gaze.</p>
+<p>Finally Tian gestured him to stop.</p>
+<p>They had arrived in a house at the back of the building. A few steps ahead, a large white door failed to contain an agitated discussion.</p>
+<p>Chadt's heartbeat accelerated. Cold sweat crept down his spine.</p>
+<p>"Be careful from now on," whispered Tian.</p>
+<p>The advice was, of course, completely unnecessary. The acrid smell of coal smoke smothered them as they took their final careful steps.</p>
+<p>"Look through the keyhole," advised Tian.</p>
+<p>"What about you?"</p>
+<p>"I see what you see."</p>
+<p>Chadt pushed the implications aside, and leaned in with extreme care. The lock seemed to expect an enormous key, so he had no trouble getting a clear view.</p>
+<p>A thin, oval table occupied all the space, surrounded by a bataillon of cushioned chairs. In the middle, six gentlemen sat on one side, observing with various stages of boredom another man shuffling through piles of paper.</p>
+<p>"That's Georges Curzon", came the voice of Tian in Chadt's head. It reminded him of the manor escape and sent his heart for another spin.</p>
+<p>"He's the only opposition left. Once he falls, they sign."</p>
+<p>Inside, Curzon called upon the Lay of the Land:</p>
+<p>"You have never been there, Mr. Balfour. I have been, many times. I say this with no pleasure. The water scarce. The land is dry. The population already exceeds what it can carry. It cannot absorb more people."</p>
+<p>His voice was cutting and precise, delivering a verdict, not an argument.</p>
+<p>On the other side of the table, an elderly, languid man listened with amused judgement, which contrasted with the impassive detachment of the stern gentleman sitting in the presiding chair. The other men seemed so inattentive they might as well have been asleep.</p>
+<p>Once Curzon was done talking, the old man did not answer immediately. The opponents stared at each other, under the icy watch of the Prime Minister. When Arthur Balfour spoke, he had the air of a patient teacher correcting a child so completely wrong it was endearing.</p>
+<p>Balfour countered with Psychical Spiritualism:</p>
+<p>"You speak of soil and water, Lord Curzon, as if matter were of any real consequence. Man's existence is a brief and transitory episode on one of the meanest of planets. The Earth itself will go tideless and inert. Our measure cannot be the material. I anchor our policy in a moral law, immutable, eternal. In its governance alone do spirits find their true freedom."</p>
+<h2 id="work-from-here">WORK FROM HERE</h2>
+<p>Chadt shared the frustration he guessed behind Curzon's monocle. Balfour's assault had moved the discussion on a path he could not follow. Chadt found himself rooting for the rigid bureaucrat rummaging through documents with a barely contained anger.</p>
+<p>He seemed to find what he was looking for, and brandished a Census of the Victims:</p>
+<p>"You speak of souls, Mr. Balfour. Let me offer a census. Seven hundred thousand Arabs already live there. You are promising someone else's home."</p>
+<p>Chadt's body turned stiff as he witnessed Balfour deflect using Race Theory:</p>
+<p>"Men are not born equal. I am sorry if that offends the modern sensibility, but it is a fact. The white and black races are not born with equal capacities. You cannot build a policy on the fiction that every soul weighs the same."</p>
+<p>Pure shock simmered into outrage. </p>
+<p>"We have to stop him", Chadt determined.</p>
+<p>"It has already happened, replied Tian. If they kick us out we'll have to start over."</p>
 <p>Chadt fumes, begs Tian to intervene. Tian controls Chadt, tells him we cant do anything, we must not waste our chance to witness</p>
-<p>🦭 Curzon denounces a <strong>Bloodshed Coercion</strong>:
-"Youre putting yolks on people you've never even consulted. You're making blood their only option. You're playing with fire on holy sites are landmines"</p>
+<p>Curzon denounces the <strong>Worsening Segregation</strong>:
+youre begging for bloodshed, antisemitism will worsen everywhere</p>
 <p>Chadt is ready to burst</p>
 <p>🦊 Balfour counters with <strong>Antisemite Deportation</strong> 
-"we need them out of here"</p>
+"we need them out of here"
+With regard to the second point, he felt that, so far from
+Zionism hindering the process of assimilation in Western countries,
+the truer parallel was to be found in the position of a n Englishman
+who leaves his country to establish a permanent home in the United
+States. In the latter case there was no difficulty in the Englishman
+or his children becoming full nationals of the United States, whereas,
+in the present position of Jewry, the assimilation was often felt to
+be incomplete, and any danger of a double aUegiance or non-national
+outlook would be eliminated.</p>
 <p>Chadt is shocked at what he witnesses, to think he almost missed that, he learns to just watch</p>
-<p>🦭 Finally, Curzon summons the <strong>McMahon-Hussein Pledge</strong> 
-"We already gave our word"</p>
+<p>🦭 Finally, Curzon summons the <strong>McMahon-Hussein Pledge</strong>
+agrees its all about propaganda
+"We must remain in control of holy sites in Jerusalem and Bethlehem.
+raising false expectations
+making false promises
+on the powder keg that is the holy land
+youre playing with fire, 
+sees strategical importance, prioritize control of christian holy sites in Jerusalem and Bethlehem
+how can we do that if our <em>word</em> means nothing</p>
 <p>Chat looks at curzon in a sorry state, how much more of this can he watch?</p>
-<p>🦊 Balfour starts casting his Gentleman's Manners in response. The crown never did agree to any detail, and the correspondance left ample provisions for future leverage such as this.</p>
+<p>🦊 Balfour starts casting, demonstrating his mastery over his Gentleman's Agreement in response. The crown never did agree to any detail, and the correspondance left ample provisions for future leverage such as this.</p>
 <p>He towers over a Curzon in pityful state. Suspens.</p>
 
 
@@ -1013,6 +1076,26 @@
   
   try { localStorage.setItem('A6_SGS3/sgs3', '1'); } catch (e) { }
   
+
+  (function() {
+    var title = document.querySelector('.md-header__title');
+    if (title) {
+      title.style.cursor = 'pointer';
+      title.addEventListener('click', function() {
+        var key = 'scrollPos_' + location.pathname;
+        if (window.scrollY > 0) {
+          sessionStorage.setItem(key, window.scrollY);
+          window.scrollTo(0, 0);
+        } else {
+          var saved = sessionStorage.getItem(key);
+          if (saved) {
+            window.scrollTo(0, parseInt(saved, 10));
+            sessionStorage.removeItem(key);
+          }
+        }
+      });
+    }
+  })();
 </script>
 
   </body>

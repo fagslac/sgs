@@ -211,6 +211,7 @@
     .md-sidebar--secondary:has(.calendarbox, .marqueebox) {
       display: block !important;
       width: 350px;
+      margin-right: 8px;
       align-self: flex-start;
       flex-shrink: 0;
       position: sticky;
@@ -482,7 +483,7 @@
   }
 
   .calendar_weekday {
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--color-text);
     line-height: 1.2;
@@ -495,7 +496,7 @@
   }
 
   .calendar_year {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-text);
     text-shadow: 0 0 6px rgba(255, 95, 160, 0.3);
@@ -515,9 +516,10 @@
     border-radius: 4px;
     padding: 8px 10px;
     font-family: "Space Mono", monospace;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--color-pink-light);
     line-height: 1;
+    letter-spacing: -1px;
   }
 </style>
 
@@ -655,7 +657,11 @@
     }
 
     .mapbox iframe {
-      height: 140px;
+      height: 200px;
+    }
+
+    body .md-content {
+      padding: 1rem 1.5rem;
     }
   }
 </style>
@@ -816,16 +822,30 @@
   </div>
   <div class="calendar_clockcol">
     <div class="calendar_clock">17:36</div>
+    <script>
+      (function() {
+        var el = document.currentScript.previousElementSibling;
+        if (!el) return;
+        var base = el.textContent.trim();
+        var s = Math.floor(Math.random() * 60);
+        el.textContent = base + ':' + String(s).padStart(2, '0');
+        s = (s + 1) % 60;
+        setInterval(function() {
+          el.textContent = base + ':' + String(s).padStart(2, '0');
+          s = (s + 1) % 60;
+        }, 1000);
+      })();
+    </script>
   </div>
 </div>
 
 
 <div class="mapbox">
-  <iframe width="100%" height="160" frameborder="0"
+  <iframe width="100%" height="200" frameborder="0"
     src="https://www.openstreetmap.org/export/embed.html?bbox=-0.16104752054828927%2C51.49359389949132%2C-0.14104752054828926%2C51.51359389949132&marker=51.50359389949132%2C-0.15104752054828927">
   </iframe>
-  <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.50359389949132,-0.15104752054828927" target="_blank"
-    rel="noopener noreferrer" class="streetview-link">Open on Google Street View&trade;</a>
+  <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.50359389949132,-0.15104752054828927&heading=270"
+    target="_blank" rel="noopener noreferrer" class="streetview-link">Open on Google Street View&trade;</a>
 </div>
 
 
@@ -878,16 +898,30 @@
   </div>
   <div class="calendar_clockcol">
     <div class="calendar_clock">17:36</div>
+    <script>
+      (function() {
+        var el = document.currentScript.previousElementSibling;
+        if (!el) return;
+        var base = el.textContent.trim();
+        var s = Math.floor(Math.random() * 60);
+        el.textContent = base + ':' + String(s).padStart(2, '0');
+        s = (s + 1) % 60;
+        setInterval(function() {
+          el.textContent = base + ':' + String(s).padStart(2, '0');
+          s = (s + 1) % 60;
+        }, 1000);
+      })();
+    </script>
   </div>
 </div>
 
 
 <div class="mapbox">
-  <iframe width="100%" height="160" frameborder="0"
+  <iframe width="100%" height="200" frameborder="0"
     src="https://www.openstreetmap.org/export/embed.html?bbox=-0.16104752054828927%2C51.49359389949132%2C-0.14104752054828926%2C51.51359389949132&marker=51.50359389949132%2C-0.15104752054828927">
   </iframe>
-  <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.50359389949132,-0.15104752054828927" target="_blank"
-    rel="noopener noreferrer" class="streetview-link">Open on Google Street View&trade;</a>
+  <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.50359389949132,-0.15104752054828927&heading=270"
+    target="_blank" rel="noopener noreferrer" class="streetview-link">Open on Google Street View&trade;</a>
 </div>
 
 
@@ -1075,6 +1109,26 @@
   
   try { localStorage.setItem('A2_SGS1/sgs1', '1'); } catch (e) { }
   
+
+  (function() {
+    var title = document.querySelector('.md-header__title');
+    if (title) {
+      title.style.cursor = 'pointer';
+      title.addEventListener('click', function() {
+        var key = 'scrollPos_' + location.pathname;
+        if (window.scrollY > 0) {
+          sessionStorage.setItem(key, window.scrollY);
+          window.scrollTo(0, 0);
+        } else {
+          var saved = sessionStorage.getItem(key);
+          if (saved) {
+            window.scrollTo(0, parseInt(saved, 10));
+            sessionStorage.removeItem(key);
+          }
+        }
+      });
+    }
+  })();
 </script>
 
   </body>

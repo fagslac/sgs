@@ -207,6 +207,7 @@
     .md-sidebar--secondary:has(.calendarbox, .marqueebox) {
       display: block !important;
       width: 350px;
+      margin-right: 8px;
       align-self: flex-start;
       flex-shrink: 0;
       position: sticky;
@@ -478,7 +479,7 @@
   }
 
   .calendar_weekday {
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--color-text);
     line-height: 1.2;
@@ -491,7 +492,7 @@
   }
 
   .calendar_year {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-text);
     text-shadow: 0 0 6px rgba(255, 95, 160, 0.3);
@@ -511,9 +512,10 @@
     border-radius: 4px;
     padding: 8px 10px;
     font-family: "Space Mono", monospace;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--color-pink-light);
     line-height: 1;
+    letter-spacing: -1px;
   }
 </style>
 
@@ -651,7 +653,11 @@
     }
 
     .mapbox iframe {
-      height: 140px;
+      height: 200px;
+    }
+
+    body .md-content {
+      padding: 1rem 1.5rem;
     }
   }
 </style>
@@ -846,6 +852,7 @@ place: 51.503397940428044, -0.12765618308064514</p>
 <li>
 <p>[] C&amp;T argue over the policy of non intervention mb</p>
 </li>
+<li>[] Cock pit, "recursion", antisemitism as an exploding mix</li>
 </ul>
 <h2 id="notes">Notes</h2>
 <ul>
@@ -944,6 +951,26 @@ Tian dimmed the colors of both of their clothes to dim, dark shade of grey. They
   
   try { localStorage.setItem('A6_SGS3/sgs3_notes', '1'); } catch (e) { }
   
+
+  (function() {
+    var title = document.querySelector('.md-header__title');
+    if (title) {
+      title.style.cursor = 'pointer';
+      title.addEventListener('click', function() {
+        var key = 'scrollPos_' + location.pathname;
+        if (window.scrollY > 0) {
+          sessionStorage.setItem(key, window.scrollY);
+          window.scrollTo(0, 0);
+        } else {
+          var saved = sessionStorage.getItem(key);
+          if (saved) {
+            window.scrollTo(0, parseInt(saved, 10));
+            sessionStorage.removeItem(key);
+          }
+        }
+      });
+    }
+  })();
 </script>
 
   </body>
