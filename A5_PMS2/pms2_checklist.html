@@ -177,23 +177,76 @@
   }
 </style>
 
-<!-- -------------------- Shared metadata widgets -------------------- -->
+<!-- -------------------- Default Page -------------------- -->
 <style>
-  .metadata_inlined,
-  .metadata_column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
+  body {
+    background: var(--color-purple-deep);
+    color: var(--color-text);
   }
 
-  .metadata_inlined:not(:has(.calendarbox, .marqueebox)) {
-    display: none;
+  body .md-content {
+    background: rgba(124, 106, 232, 0.08);
+    border: 1px solid rgba(124, 106, 232, 0.25);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
   }
 
-  .metadata_inlined:has(.calendarbox, .marqueebox),
-  .metadata_column:has(.calendarbox, .marqueebox) {
-    margin: 1.5rem 0;
+  .md-content h1,
+  .md-content h2,
+  .md-content h3,
+  .md-content h4,
+  .md-content h5,
+  .md-content h6 {
+    color: var(--color-purple-light);
+    font-weight: 700;
+  }
+
+  .md-content p,
+  .md-content li {
+    color: var(--color-text);
+    line-height: 1.7;
+  }
+
+  .md-content a {
+    color: var(--color-purple-light);
+    text-decoration: underline;
+    text-decoration-color: rgba(183, 169, 255, 0.35);
+    text-underline-offset: 3px;
+  }
+
+  .md-content a:hover {
+    color: var(--color-pink);
+    text-decoration-color: var(--color-pink);
+  }
+
+  .md-content strong {
+    color: var(--color-purple-light);
+  }
+
+  .md-content em {
+    color: var(--color-text-dim);
+  }
+
+  .md-content blockquote {
+    border-left: 3px solid var(--color-purple);
+    color: var(--color-text-dim);
+    padding-left: 1rem;
+  }
+
+  .md-content code {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--color-skyblue-light);
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+  }
+
+  .md-content hr {
+    border-color: rgba(183, 169, 255, 0.2);
+  }
+
+  ::selection {
+    background: rgba(255, 95, 160, 0.35);
+    color: var(--color-text);
   }
 </style>
 
@@ -204,7 +257,7 @@
       display: none !important;
     }
 
-    .md-sidebar--secondary:has(.calendarbox, .marqueebox) {
+    .md-sidebar--secondary:has(.calendarbox, .marqueebox, .external-links) {
       display: block !important;
       width: 350px;
       margin-right: 8px;
@@ -335,88 +388,94 @@
   }
 </style>
 
-<!-- -------------------- Home page title image -------------------- -->
+<!-- -------------------- Shared metadata widgets -------------------- -->
 <style>
-  .home-title-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    max-height: 600px;
-    margin: 0 auto 1.5rem;
-    border-radius: 8px;
+  .metadata_inlined,
+  .metadata_column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .metadata_inlined:not(:has(.calendarbox, .marqueebox, .external-links)) {
+    display: none;
+  }
+
+  .metadata_inlined:has(.calendarbox, .marqueebox, .external-links),
+  .metadata_column:has(.calendarbox, .marqueebox, .external-links) {
+    margin: 0.5rem 0;
   }
 </style>
 
-<!-- -------------------- Default Page -------------------- -->
+<!-- -------------------- External links (Wattpad, Royal Road, etc.) -------------------- -->
 <style>
-  body {
-    background: var(--color-purple-deep);
-    color: var(--color-text);
+  .external-links {
+    display: flex;
+    gap: 10px;
+    padding: 2px 12px 6px;
+    justify-content: center;
   }
 
-  body .md-content {
-    background: rgba(124, 106, 232, 0.08);
-    border: 1px solid rgba(124, 106, 232, 0.25);
-    border-radius: 10px;
-    padding: 1.5rem 2rem;
+  .external-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.07);
+    transition: background 0.15s, transform 0.15s;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
   }
 
-  .md-content h1,
-  .md-content h2,
-  .md-content h3,
-  .md-content h4,
-  .md-content h5,
-  .md-content h6 {
-    color: var(--color-purple-light);
+  .external-link:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.12);
+    color: #fff;
+  }
+
+  .external-link span {
+    font-size: 0.85rem;
     font-weight: 700;
+    line-height: 1;
   }
 
-  .md-content p,
-  .md-content li {
-    color: var(--color-text);
-    line-height: 1.7;
-  }
-
-  .md-content a {
-    color: var(--color-purple-light);
-    text-decoration: underline;
-    text-decoration-color: rgba(183, 169, 255, 0.35);
-    text-underline-offset: 3px;
-  }
-
-  .md-content a:hover {
-    color: var(--color-pink);
-    text-decoration-color: var(--color-pink);
-  }
-
-  .md-content strong {
-    color: var(--color-purple-light);
-  }
-
-  .md-content em {
-    color: var(--color-text-dim);
-  }
-
-  .md-content blockquote {
-    border-left: 3px solid var(--color-purple);
-    color: var(--color-text-dim);
-    padding-left: 1rem;
-  }
-
-  .md-content code {
-    background: rgba(255, 255, 255, 0.06);
-    color: var(--color-skyblue-light);
+  .external-link img {
+    width: 20px;
+    height: 20px;
     border-radius: 4px;
-    padding: 0.1em 0.35em;
   }
 
-  .md-content hr {
-    border-color: rgba(183, 169, 255, 0.2);
+  .external-link--wattpad {
+    background: rgba(255, 102, 0, 0.15);
+    color: #FF8C38;
   }
 
-  ::selection {
-    background: rgba(255, 95, 160, 0.35);
-    color: var(--color-text);
+  .external-link--wattpad:hover {
+    background: rgba(255, 102, 0, 0.3);
+    color: #FFA75E;
+  }
+
+  .external-link--royalroad {
+    background: rgba(201, 168, 76, 0.15);
+    color: #C9A84C;
+  }
+
+  .external-link--royalroad:hover {
+    background: rgba(201, 168, 76, 0.3);
+    color: #E0C86A;
+  }
+
+  .external-link--reviews {
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .external-link--reviews:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
   }
 </style>
 
@@ -587,7 +646,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     border: 1px solid var(--color-skyblue);
     border-radius: 6px;
-    margin: 1.25rem 0 1.75rem;
+    margin: .75rem 0 0.5rem;
     overflow: hidden;
     background: rgba(79, 195, 247, 0.08);
   }
@@ -659,6 +718,18 @@
     body .md-content {
       padding: 1rem 1.5rem;
     }
+  }
+</style>
+
+<!-- -------------------- Home page -------------------- -->
+<style>
+  .home-title-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    margin: 0 auto 1.5rem;
+    border-radius: 8px;
   }
 </style>
 
@@ -793,6 +864,14 @@
       <div class="metadata_column">
         
         
+        
+<div class="external-links">
+  
+  <a href="reviews.html"
+     class="external-link external-link--reviews"
+     title="Reader reviews"><span>R</span></a>
+</div>
+
       </div>
     </div>
   </div>
@@ -808,6 +887,14 @@
 <div class="metadata_inlined">
   
   
+  
+<div class="external-links">
+  
+  <a href="reviews.html"
+     class="external-link external-link--reviews"
+     title="Reader reviews"><span>R</span></a>
+</div>
+
 </div>
 
 
