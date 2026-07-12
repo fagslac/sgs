@@ -194,6 +194,11 @@
   }
 
   .md-content h1,
+  .md-content h2 {
+    padding-top: 5px;
+  }
+
+  .md-content h1,
   .md-content h2,
   .md-content h3,
   .md-content h4,
@@ -266,13 +271,14 @@
       align-self: flex-start;
       flex-shrink: 0;
       position: sticky;
-      top: 5rem;
+      top: 4rem;
       z-index: 1;
       order: 2;
     }
 
     .md-sidebar--secondary .md-sidebar__scrollwrap {
-      overflow: visible;
+      overflow-y: auto;
+      max-height: calc(100vh - 4rem);
     }
 
     .md-sidebar--secondary .md-sidebar__inner {
@@ -698,6 +704,99 @@
   }
 </style>
 
+<!-- -------------------- PMS TOC -------------------- -->
+<style>
+  .pms-toc {
+    border: 1px solid var(--color-skyblue);
+    border-radius: 6px;
+    background: rgba(79, 195, 247, 0.06);
+    max-height: 35vh;
+    overflow-y: auto;
+    margin-top: 0.5rem;
+  }
+
+  .pms-toc__header {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-skyblue-light);
+    padding: 0.5rem 0.9rem 0.2rem;
+    opacity: 0.85;
+    position: sticky;
+    top: 0;
+    background: var(--color-blue-deep);
+    z-index: 1;
+  }
+
+  .pms-toc ul,
+  .pms-toc ol {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .pms-toc__list {
+    padding: 0.2rem 0 0.4rem;
+    margin: 0;
+  }
+
+  .pms-toc li {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0.1rem 0.9rem;
+  }
+
+  .pms-toc__list>li::before {
+    content: '–';
+    color: var(--color-skyblue);
+    opacity: 0.5;
+    margin-right: 0.4em;
+    flex-shrink: 0;
+  }
+
+  .pms-toc__sublink::before {
+    content: '◆';
+    color: var(--color-skyblue);
+    opacity: 0.5;
+    margin-right: 0.4em;
+    font-size: 0.65rem;
+    flex-shrink: 0;
+  }
+
+  .pms-toc__list a {
+    color: var(--color-silver);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.15s;
+  }
+
+  .pms-toc__list a:hover {
+    color: var(--color-skyblue-light);
+  }
+
+  .pms-toc__sublink {
+    padding-left: 1.5rem !important;
+  }
+
+  .pms-toc__sublink a {
+    font-size: 0.78rem;
+    opacity: 0.85;
+  }
+
+  .pms-toc::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .pms-toc::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .pms-toc::-webkit-scrollbar-thumb {
+    background: var(--color-skyblue);
+    border-radius: 3px;
+  }
+</style>
+
 <!-- -------------------- Responsive / Mobile -------------------- -->
 <style>
   @media screen and (max-width: 74.9375em) {
@@ -711,6 +810,20 @@
 
     .prevnext a:last-child {
       text-align: left;
+    }
+
+    .metadata_inlined {
+      gap: 6px;
+    }
+
+    .metadata_inlined .pms-toc {
+      max-height: none;
+      overflow: visible;
+    }
+
+    .metadata_inlined .pms-toc li,
+    .metadata_inlined .pms-toc ul {
+      margin: 0;
     }
 
     .mapbox iframe {

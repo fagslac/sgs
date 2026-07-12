@@ -192,6 +192,11 @@
   }
 
   .md-content h1,
+  .md-content h2 {
+    padding-top: 5px;
+  }
+
+  .md-content h1,
   .md-content h2,
   .md-content h3,
   .md-content h4,
@@ -264,13 +269,14 @@
       align-self: flex-start;
       flex-shrink: 0;
       position: sticky;
-      top: 5rem;
+      top: 4rem;
       z-index: 1;
       order: 2;
     }
 
     .md-sidebar--secondary .md-sidebar__scrollwrap {
-      overflow: visible;
+      overflow-y: auto;
+      max-height: calc(100vh - 4rem);
     }
 
     .md-sidebar--secondary .md-sidebar__inner {
@@ -696,6 +702,99 @@
   }
 </style>
 
+<!-- -------------------- PMS TOC -------------------- -->
+<style>
+  .pms-toc {
+    border: 1px solid var(--color-skyblue);
+    border-radius: 6px;
+    background: rgba(79, 195, 247, 0.06);
+    max-height: 35vh;
+    overflow-y: auto;
+    margin-top: 0.5rem;
+  }
+
+  .pms-toc__header {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-skyblue-light);
+    padding: 0.5rem 0.9rem 0.2rem;
+    opacity: 0.85;
+    position: sticky;
+    top: 0;
+    background: var(--color-blue-deep);
+    z-index: 1;
+  }
+
+  .pms-toc ul,
+  .pms-toc ol {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .pms-toc__list {
+    padding: 0.2rem 0 0.4rem;
+    margin: 0;
+  }
+
+  .pms-toc li {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0.1rem 0.9rem;
+  }
+
+  .pms-toc__list>li::before {
+    content: '–';
+    color: var(--color-skyblue);
+    opacity: 0.5;
+    margin-right: 0.4em;
+    flex-shrink: 0;
+  }
+
+  .pms-toc__sublink::before {
+    content: '◆';
+    color: var(--color-skyblue);
+    opacity: 0.5;
+    margin-right: 0.4em;
+    font-size: 0.65rem;
+    flex-shrink: 0;
+  }
+
+  .pms-toc__list a {
+    color: var(--color-silver);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.15s;
+  }
+
+  .pms-toc__list a:hover {
+    color: var(--color-skyblue-light);
+  }
+
+  .pms-toc__sublink {
+    padding-left: 1.5rem !important;
+  }
+
+  .pms-toc__sublink a {
+    font-size: 0.78rem;
+    opacity: 0.85;
+  }
+
+  .pms-toc::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .pms-toc::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .pms-toc::-webkit-scrollbar-thumb {
+    background: var(--color-skyblue);
+    border-radius: 3px;
+  }
+</style>
+
 <!-- -------------------- Responsive / Mobile -------------------- -->
 <style>
   @media screen and (max-width: 74.9375em) {
@@ -709,6 +808,20 @@
 
     .prevnext a:last-child {
       text-align: left;
+    }
+
+    .metadata_inlined {
+      gap: 6px;
+    }
+
+    .metadata_inlined .pms-toc {
+      max-height: none;
+      overflow: visible;
+    }
+
+    .metadata_inlined .pms-toc li,
+    .metadata_inlined .pms-toc ul {
+      margin: 0;
     }
 
     .mapbox iframe {
@@ -894,7 +1007,7 @@
 We're also touching a lot of really interesting debates and discussions so this chapter can afford to be a bit bigger than usual. It also means it's very important to listen to the position of each LLM actor.</p>
 <p>We move to the register of esports commentary / WWE Wrestling. This is the main tone for the chapter. </p>
 <h2 id="start-with-commenting-the-previous-scorecards">Start with commenting the previous scorecards</h2>
-<h3 id="one-round-of-commenting-the-percentages">one round of commenting the percentages</h3>
+<h3 id="one-round-of-commenting-the-percentages-place-your-bets">one round of commenting the percentages: "PLACE YOUR BETS"</h3>
 <p>Have all advisors react to this prognosis of success for the ritual:</p>
 <p>SEVEN OF SWORDS: 34%<br />
 FIVE OF PENTACLES: 19%<br />
@@ -915,7 +1028,7 @@ ACE OF WANDS: 23%  </p>
 <h2 id="who-do-you-bet-on">Who do you bet on?</h2>
 <p>A round of advisors taking sides and commenting on what their strategy should be.
 Point of view from BEFORE the fight.</p>
-<h2 id="before-we-start-a-historiography-note">Before we start, a historiography note!</h2>
+<h2 id="before-we-start-a-historiography-note-in-praise-of-our-sponsors-they-did-ask-us-to-keep-in-mind-that-the-representation-is-fictional-and-deformed-we-are-blessed-in-this-specific-case-with-a-great-definition">Before we start, a historiography note in praise of our Sponsors! They did ask us to keep in mind that the representation is fictional and deformed. We are blessed in this specific case with a great definition.</h2>
 <p>Arbiter: We're really lucky the imaginary plane has such high definition! We have minutes from the historical meeting, verbatims from Arthur Balfour, we're truly blessed today.</p>
 <p>PENTACLES: the verbatims are from other times in his life, they bear little value here.</p>
 <p>WANDS: we should never forget we're only seeing a deformed picture. we should always assume theres heavy fluctuations.</p>

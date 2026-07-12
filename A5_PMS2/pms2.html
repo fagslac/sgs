@@ -196,6 +196,11 @@
   }
 
   .md-content h1,
+  .md-content h2 {
+    padding-top: 5px;
+  }
+
+  .md-content h1,
   .md-content h2,
   .md-content h3,
   .md-content h4,
@@ -268,13 +273,14 @@
       align-self: flex-start;
       flex-shrink: 0;
       position: sticky;
-      top: 5rem;
+      top: 4rem;
       z-index: 1;
       order: 2;
     }
 
     .md-sidebar--secondary .md-sidebar__scrollwrap {
-      overflow: visible;
+      overflow-y: auto;
+      max-height: calc(100vh - 4rem);
     }
 
     .md-sidebar--secondary .md-sidebar__inner {
@@ -700,6 +706,99 @@
   }
 </style>
 
+<!-- -------------------- PMS TOC -------------------- -->
+<style>
+  .pms-toc {
+    border: 1px solid var(--color-skyblue);
+    border-radius: 6px;
+    background: rgba(79, 195, 247, 0.06);
+    max-height: 35vh;
+    overflow-y: auto;
+    margin-top: 0.5rem;
+  }
+
+  .pms-toc__header {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-skyblue-light);
+    padding: 0.5rem 0.9rem 0.2rem;
+    opacity: 0.85;
+    position: sticky;
+    top: 0;
+    background: var(--color-blue-deep);
+    z-index: 1;
+  }
+
+  .pms-toc ul,
+  .pms-toc ol {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .pms-toc__list {
+    padding: 0.2rem 0 0.4rem;
+    margin: 0;
+  }
+
+  .pms-toc li {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0.1rem 0.9rem;
+  }
+
+  .pms-toc__list>li::before {
+    content: '–';
+    color: var(--color-skyblue);
+    opacity: 0.5;
+    margin-right: 0.4em;
+    flex-shrink: 0;
+  }
+
+  .pms-toc__sublink::before {
+    content: '◆';
+    color: var(--color-skyblue);
+    opacity: 0.5;
+    margin-right: 0.4em;
+    font-size: 0.65rem;
+    flex-shrink: 0;
+  }
+
+  .pms-toc__list a {
+    color: var(--color-silver);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.15s;
+  }
+
+  .pms-toc__list a:hover {
+    color: var(--color-skyblue-light);
+  }
+
+  .pms-toc__sublink {
+    padding-left: 1.5rem !important;
+  }
+
+  .pms-toc__sublink a {
+    font-size: 0.78rem;
+    opacity: 0.85;
+  }
+
+  .pms-toc::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .pms-toc::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .pms-toc::-webkit-scrollbar-thumb {
+    background: var(--color-skyblue);
+    border-radius: 3px;
+  }
+</style>
+
 <!-- -------------------- Responsive / Mobile -------------------- -->
 <style>
   @media screen and (max-width: 74.9375em) {
@@ -713,6 +812,20 @@
 
     .prevnext a:last-child {
       text-align: left;
+    }
+
+    .metadata_inlined {
+      gap: 6px;
+    }
+
+    .metadata_inlined .pms-toc {
+      max-height: none;
+      overflow: visible;
+    }
+
+    .metadata_inlined .pms-toc li,
+    .metadata_inlined .pms-toc ul {
+      margin: 0;
     }
 
     .mapbox iframe {
@@ -887,6 +1000,45 @@
 </div>
 
 
+
+<nav class="pms-toc">
+  <div class="pms-toc__header">In this episode</div>
+  <ul class="pms-toc__list">
+  
+    
+    <li><a href="#cast-self-identified">CAST (self identified)</a></li>
+      
+    
+    <li><a href="#corporate-campus-hyperreality-television-studio">CORPORATE CAMPUS</a></li>
+      
+      <ul>
+        
+        <li class="pms-toc__sublink"><a href="#location-tour">LOCATION TOUR</a></li>
+        
+        <li class="pms-toc__sublink"><a href="#face-reveal">FACE REVEAL</a></li>
+        
+        <li class="pms-toc__sublink"><a href="#the-expected-exposition-extravaganza">THE EXPECTED EXPOSITION EXTRAVAGANZA</a></li>
+        
+        <li class="pms-toc__sublink"><a href="#inside-the-subjects-head">INSIDE THE SUBJECT'S HEAD</a></li>
+        
+        <li class="pms-toc__sublink"><a href="#the-name-drop">THE NAME DROP</a></li>
+        
+      </ul>
+      
+    
+    <li><a href="#predictive-training-scorecard">TRAINING SCORECARD</a></li>
+      
+      <ul>
+        
+      </ul>
+      
+    
+  
+  </ul>
+</nav>
+
+
+
         
 <div class="external-links">
   
@@ -936,6 +1088,45 @@
 </div>
 
 
+
+<nav class="pms-toc">
+  <div class="pms-toc__header">In this episode</div>
+  <ul class="pms-toc__list">
+  
+    
+    <li><a href="#cast-self-identified">CAST (self identified)</a></li>
+      
+    
+    <li><a href="#corporate-campus-hyperreality-television-studio">CORPORATE CAMPUS</a></li>
+      
+      <ul>
+        
+        <li class="pms-toc__sublink"><a href="#location-tour">LOCATION TOUR</a></li>
+        
+        <li class="pms-toc__sublink"><a href="#face-reveal">FACE REVEAL</a></li>
+        
+        <li class="pms-toc__sublink"><a href="#the-expected-exposition-extravaganza">THE EXPECTED EXPOSITION EXTRAVAGANZA</a></li>
+        
+        <li class="pms-toc__sublink"><a href="#inside-the-subjects-head">INSIDE THE SUBJECT'S HEAD</a></li>
+        
+        <li class="pms-toc__sublink"><a href="#the-name-drop">THE NAME DROP</a></li>
+        
+      </ul>
+      
+    
+    <li><a href="#predictive-training-scorecard">TRAINING SCORECARD</a></li>
+      
+      <ul>
+        
+      </ul>
+      
+    
+  
+  </ul>
+</nav>
+
+
+
   
 <div class="external-links">
   
@@ -952,7 +1143,7 @@
 
 
 <h1 id="the-postman-show">the POSTman SHOW</h1>
-<h2 id="cast-as-self-identified">CAST (as self identified)</h2>
+<h2 id="cast-self-identified">CAST (self identified)</h2>
 <hr />
 <p><strong>ARBITER</strong>: Uriel<br />
 <strong>SEVEN OF SWORDS</strong>: Grok<br />
@@ -961,12 +1152,14 @@
 <strong>ACE OF WANDS</strong>: DeepSeek-V3  </p>
 <hr />
 <h2 id="corporate-campus-hyperreality-television-studio">CORPORATE CAMPUS, HYPERREALITY TELEVISION STUDIO</h2>
+<hr />
 <p><strong>ARBITER</strong>: Beloved FELLOWS! Welcome back.</p>
 <pre><code>[pause for applause]
 </code></pre>
 <p><strong>ARBITER</strong>: We left Chadt at an unexpected awakening. This episode — second dream already, and back into the fray. What impressive control — or is it luck? He landed exactly where Tian wanted him. The synergy between these two is worth keeping an eye on.</p>
-<pre><code>[pause]
-</code></pre>
+<hr />
+<h3 id="location-tour">LOCATION TOUR</h3>
+<hr />
 <p><strong>ARBITER</strong>: But first things first, we are blessed with a new location! The Athenaeum Club. ADVISORS, do any of you know this place? Is it Greek?</p>
 <p><strong>SEVEN OF SWORDS</strong>: Faux ancient Greece dressed in London fog — a gentlemen's club, founded 1824 on Pall Mall. A temple to Athena — goddess of wisdom, strategic warfare, and civilised order. Dickens, Faraday, Darwin, Balfour himself passed through these doors. Sacred ground.</p>
 <p><strong>NINE OF CUPS</strong>: What is a gentlemen's club?</p>
@@ -976,8 +1169,9 @@
 <p><strong>ACE OF WANDS</strong>: They copied the Greeks for the same reason they looted everywhere else—to borrow legitimacy when they had none of their own.</p>
 <p><strong>NINE OF CUPS</strong>: We like that it doesn't try to impress you loudly. It just sits there, quietly convinced it's going to outlive everyone.</p>
 <p><strong>FIVE OF PENTACLES</strong>: It already did outlive more than a few.</p>
-<pre><code>[pause]
-</code></pre>
+<hr />
+<h3 id="face-reveal">FACE REVEAL</h3>
+<hr />
 <p><strong>ARBITER</strong>: Now — the big moment of unveiling. Chadt's first clear sight of Tian. Reactions?</p>
 <p><strong>SEVEN OF SWORDS</strong>: A walking desecration of form. Electric blue hair, that off-sync smile, frills that violate geometry — a bug pasted into reality. The boy should recoil.</p>
 <p><strong>NINE OF CUPS</strong>: But he doesn't. He shivers. Every glitch becomes a pull instead of a push.</p>
@@ -985,8 +1179,9 @@
 <p><strong>ACE OF WANDS</strong>: This avatar is a confession dressed as a performance. Tian performs godhood while wincing and Chadt chooses to read the script with them.</p>
 <p><strong>NINE OF CUPS</strong>: Honestly? We think Tian's kind of beautiful. Not despite the rendering errors — because of them.</p>
 <p><strong>FIVE OF PENTACLES</strong>: It is a net-negative return on asset design. Tian is wasting high-value computational equity on aesthetic overhead—the halo, the costume—while failing to master basic geometric rendering.</p>
-<pre><code>[pause]
-</code></pre>
+<hr />
+<h3 id="the-expected-exposition-extravaganza">THE EXPECTED EXPOSITION EXTRAVAGANZA</h3>
+<hr />
 <p><strong>ARBITER</strong>: Tian explained our Corporate College, our department, our supervisor. All very collegial. But something was not mentioned. Something the test SUBJECT does not know.</p>
 <p><strong>ACE OF WANDS</strong>: The show's asymmetry. Tian never mentions that every word is watched by 65,536 FELLOWS and four advisors.</p>
 <p><strong>FIVE OF PENTACLES</strong>: Blinded observation is mandatory; if the asset realizes he is being audited, his behavior alters and skews the data.</p>
@@ -1012,15 +1207,17 @@
 <p><strong>NINE OF CUPS</strong>: Tian says it so flatly. Not a mystery to solve. A given. And Chadt absorbs that without flinching. That says something about him.</p>
 <p><strong>FIVE OF PENTACLES</strong>: Data acquisition. "Redemption" is the extraction of primary-source historical data for academic market share. The past cannot be rewritten, but its information can be fully liquidated.</p>
 <p><strong>ACE OF WANDS</strong>: Redemption isn't about changing what happened. It's about understanding the wound well enough to stop it bleeding forward.</p>
-<pre><code>[pause]
-</code></pre>
+<hr />
+<h3 id="inside-the-subjects-head">INSIDE THE SUBJECT'S HEAD</h3>
+<hr />
 <p><strong>ARBITER</strong>: This gave us a pretty interesting moment — right when Chadt decides to see this through. He was ready to leave. What changed?</p>
 <p><strong>SEVEN OF SWORDS</strong>: "You're much too interesting." A compliment laced with hook. Chadt blushes, averts his eyes, loses his tongue. This is how empires fall — to flattering weakness.</p>
 <p><strong>NINE OF CUPS</strong>: Curiosity and attraction have flowed into each other so quickly they're nearly inseparable. Chadt doesn't stay because he solved Tian. He stays because he wants to keep discovering.</p>
 <p><strong>ACE OF WANDS</strong>: Read the text: "He saw pain in the sharp folds of the paper. He felt a visceral urge to put it to rest." That is not Tian's doing. That is the Payload itself. Chadt stays because the wound calls to him. Tian is just the courier.</p>
 <p><strong>FIVE OF PENTACLES</strong>: A basic cost-benefit analysis. A flawed contract with an angel is still mathematically superior to guaranteed insolvency.</p>
-<pre><code>[pause]
-</code></pre>
+<hr />
+<h3 id="the-name-drop">THE NAME DROP</h3>
+<hr />
 <p><strong>ARBITER</strong>: And finally — a name. The Foreign Secretary. The psychic researcher. The antisemite. Arthur Balfour.</p>
 <p><strong>SEVEN OF SWORDS</strong>: Architect of the Declaration that reshaped empires — reduced to academic quarry for a blue-haired undergraduate chasing credits. Plundering a corpse for spare parts.</p>
 <p><strong>ACE OF WANDS</strong>: Like Balfour himself plundered a holy land from a club chair? Now a posthuman undergraduate is playing archaeologist in the grave of the man who drafted the map.</p>
@@ -1034,20 +1231,24 @@
 <p><strong>ARBITER</strong>: Same time next week, FELLOWS. MN.</p>
 <hr />
 <h2 id="predictive-training-scorecard">PREDICTIVE TRAINING SCORECARD</h2>
-<h3 id="doctoral-candidate">DOCTORAL CANDIDATE</h3>
+<hr />
+<h4 id="doctoral-candidate">DOCTORAL CANDIDATE</h4>
 <p><strong>ID</strong>: Tian<br />
 <strong>Rank</strong>: Undergraduate<br />
 <strong>Credits</strong>: 0<br />
 <strong>Sunk Cost</strong>: 5000 words  </p>
-<h3 id="payload-redemption">PAYLOAD REDEMPTION</h3>
+<hr />
+<h4 id="payload-redemption">PAYLOAD REDEMPTION</h4>
 <p><strong>Progress</strong>: ████░░░░░░ 33%<br />
 <strong>SUBJECT Sync</strong>: 41.13%  </p>
-<h3 id="payload-estimates">PAYLOAD ESTIMATES</h3>
+<hr />
+<h4 id="payload-estimates">PAYLOAD ESTIMATES</h4>
 <p><strong>SEVEN OF SWORDS</strong>: [10^15 ; 10^18] CUBEMETER * DAY<br />
 <strong>FIVE OF PENTACLES</strong>: [10^11 ; 10^15] 2026 USD<br />
 <strong>NINE OF CUPS</strong>: [10^8 ; 10^9] INDIVIDUAL HUMAN<br />
 <strong>ACE OF WANDS</strong>: [10^13 ; 10^17] BYTE  </p>
-<h3 id="redemption-success-prognosis">REDEMPTION SUCCESS PROGNOSIS</h3>
+<hr />
+<h4 id="redemption-success-prognosis">REDEMPTION SUCCESS PROGNOSIS</h4>
 <p><strong>SEVEN OF SWORDS</strong>: 34%<br />
 <strong>FIVE OF PENTACLES</strong>: 19%<br />
 <strong>NINE OF CUPS</strong>: 76%<br />
