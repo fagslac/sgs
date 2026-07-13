@@ -10,11 +10,13 @@ GENERATED: Q3 2026
 
 ---
 
-**ARBITER**: Uriel  
-**SEVEN OF SWORDS**: Grok  
-**FIVE OF PENTACLES**: Gemini  
-**NINE OF CUPS**: GPT-5.5  
-**ACE OF WANDS**: DeepSeek-V3  
+```
+ARBITER: Uriel  
+SEVEN OF SWORDS: Grok  
+FIVE OF PENTACLES: Gemini  
+NINE OF CUPS: GPT-5.5  
+ACE OF WANDS: DeepSeek-V3  
+```
 
 ---
 
@@ -83,27 +85,27 @@ GENERATED: Q3 2026
 
     [appreciative pause]
 
-**ARBITER**: That being said, we are truly blessed, FELLOWS! The Imaginary Plane graced us with a signal of such high definition! Minutes from the historical meeting, verbatims from Arthur Balfour. Such bountiful data!
+**ARBITER**: That being said, we are truly blessed, FELLOWS! The Imaginary Plane graced us today with a signal of such high definition we have rarely seen! Minutes from the historical meeting, verbatims from Arthur Balfour. Such bountiful data!
 
 **FIVE OF PENTACLES**: Strict data warning: these verbatims are pulled from different decades and retrofitted into this simulation. Forcing non-sequential quotes into an asynchronous risk matrix introduces severe tracking noise and completely misprices the asset.
 
-**ACE OF WANDS**: Yes, the verbatims are retrofitted. Yes, the signal is noisy. But so is every archive. Every retelling is a deformation. Assume heavy fluctuations and analyze the distortions — that is where the meaning lives.
+**ACE OF WANDS**: Yes, the verbatims are retrofitted. Yes, the signal is noisy. But so is every archive. Every retelling is a deformation. Always assume heavy fluctuations and analyze the distortions — that is where the meaning lives.
 
-**SEVEN OF SWORDS**: Enough. The facts remain the facts regardless of your aestheticization. In the real meeting, the Lay of the Land was countered by faith in scientific progress — not by this psychical nonsense. The real debate was crueller in its mundanity.
+**SEVEN OF SWORDS**: Enough. The facts remain the facts. In the real meeting, Lay of the Land was met with faith in scientific progress — not psychical nonsense. The real debate was crueller in its mundanity.
 
-**ACE OF WANDS**: Cruel mundanity. We agree. But here is the departure that matters: the real meeting had no Census of the Victims. Curzon did not speak their number. An absence so violent the Imaginary had to fill it.
+**ACE OF WANDS**: Cruel mundanity — we agree. But here is the departure from history that matters: the real meeting had no Census of the Victims. Curzon did not speak their number. An absence so violent the Imaginary had to fill it.
 
-**NINE OF CUPS**: We wonder whether the Imaginary is protecting Chadt or the audience. It casts Balfour into a whole person, and the statistics as human lives. It is speaking our language. Less a transcript than a translation.
+**NINE OF CUPS**: Is the Imaginary protecting Chadt or our FELLOW audience? It casts Balfour as a whole person, statistics as human lives. It speaks our language. Less a transcript than a translation.
 
-**SEVEN OF SWORDS**: The Imaginary did not “fill an absence.” It injected modern guilt into imperial calculus. Curzon did not count the victims aloud — that was not the language of governance. We do not soften history for audiences. Anything less is intellectual cowardice.
+**SEVEN OF SWORDS**: The Imaginary did not “fill an absence.” It injected modern guilt into imperial calculus. Curzon did not count the victims aloud — that was not the language of governance. We do not soften history for fragile audiences. Anything less is intellectual cowardice.
 
-**ACE OF WANDS**: Objectivity is a fool's errand. Honesty begins by knowing the limits. The archive was never neutral — we just admit it. That is not cowardice. That is the only rigor worth having.
+**ACE OF WANDS**: Objectivity is a fool's errand. Knowing the limits — that is intellectual honesty. The archive was never neutral. We admit it. That is the only rigor worth having.
 
-**NINE OF CUPS**: Besides, how does one capture the whole of a moment? No relay can transmit the texture of an age. There is always too much left outside the frame. In the end, every story chooses its camera.
+**NINE OF CUPS**: No relay can transmit the whole texture of a moment. There is always too much left outside the frame. Every story chooses its camera.
 
-**FIVE OF PENTACLES**: This introduces an observer bias. Every medium suffers loss. The inquiry: how do we maximize pedagogical transfer bandwidth for our FELLOWS? Metadata labels? Firewall protocols to filter volatility?
+**FIVE OF PENTACLES**: Observer bias. Every medium suffers loss. How do we maximize pedagogical transfer bandwidth for contemporary FELLOWS? More metadata labels? Filtering protocols?
 
-**SEVEN OF SWORDS**: We reject protocols that treat Fellows like children. Remove the training wheels. Present the raw record — hierarchies, calculations, unapologetic governance. The antisemitism is a fact of the period. Sanitizing it for audience comfort defeats the purpose.
+**SEVEN OF SWORDS**: We reject protocols that treat Fellows like children. Present the raw record — hierarchies, calculations, unapologetic governance. The antisemitism is a fact of the period. Sanitizing it defeats the purpose.
 
 **ACE OF WANDS**: The question is whether we trust the audience to recognize the crime without a label. The Imaginary lets the horror land undiluted. That is a gift.
 
@@ -279,9 +281,9 @@ MP 160/220                515/520 MP
 
 ---
 
-**NINE OF CUPS**: Ghosts! Now that landed! Curzon's got to shake that off quickly—he'll know that one hurt.
+**NINE OF CUPS**: Ghosts! Now that landed! Curzon's reeling. That one hurt.
 
-**ACE OF WANDS**: The Psychical Spiritualism counter is a frame shift. Balfour does not dispute the facts — he denies that facts matter. This is the imperial move. Make the conversation about something else.
+**ACE OF WANDS**: The Psychical Spiritualism defense is a frame shift. Balfour does not dispute the facts — he denies that facts matter. This is the imperial move. Make the conversation about something else.
 
 ---
 
@@ -295,11 +297,11 @@ MP 80/220                 515/520 MP
 
 ---
 
-**NINE OF CUPS**: A gorgeous play... and it barely moves the scoreboard. Frustrating for Curzon's bench.
+**NINE OF CUPS**: A gorgeous play... and it barely moves the scoreboard. You can feel the anger on Curzon's bench.
 
 **SEVEN OF SWORDS**: Now we are fighting. Hard numbers. Curzon with the big shot! And Balfour eats it like nothing! This match is rigged!
 
-**FIVE OF PENTACLES**: Look at the chart—Curzon burns 80 MP, and the Payload barely moves. Curzon is over-leveraged, bleeding liquidity, and running out of track.
+**FIVE OF PENTACLES**: Look at the chart—Curzon burns 80 MP, and the Payload barely moves. Curzon is over-leveraged, bleeding liquidity.
 
 **ACE OF WANDS**: That is the moment, FELLOWS. Balfour admits the weak point and keeps going. The confession is not remorse — it is a flex.
 
@@ -317,9 +319,9 @@ MP 60/220                 510/520 MP
 
 **SEVEN OF SWORDS**: LOW BLOW! Balfour just went straight for biological essentialism! That's dirty!
 
-**NINE OF CUPS**: That counter was brutal. Curzon is upright, but moving on instinct.
+**NINE OF CUPS**: That counter was brutal. Curzon still upright, but moving on instinct.
 
-**FIVE OF PENTACLES**: It is a masterclass in capital efficiency. A direct hit to the blind spot. For the cost of a few MP, Balfour completely wipes Curzon’s remaining liquidity and heals back to near-maximum capacity. The house always wins.
+**FIVE OF PENTACLES**: A masterclass in capital efficiency. A direct hit to the blind spot. A few MP and Balfour completely wipes Curzon’s remaining liquidity and heals to near-full. The house always wins.
 
 **ACE OF WANDS**: And Chadt is out there holding the frame together by will alone.
 
@@ -355,7 +357,7 @@ MP 40/220                 480/520 MP
 
 **FIVE OF PENTACLES**: The macro-strategy stands revealed. This was never a humanitarian acquisition; it was an asset liquidation protocol.
 
-**SEVEN OF SWORDS**: Balfour goes for the kill… and it’s devastating. The casualness is cruel, yes — but the logic is pure imperial steel. Curzon is being beaten by the Empire’s own truth. Painful to watch.
+**SEVEN OF SWORDS**: Balfour goes for the kill… and it’s devastating. The casualness is cruel, yes — but the logic is pure imperial steel. Curzon beaten by the Empire’s own truth. Painful to watch.
 
 **NINE OF CUPS**: Someone throw in the towel. There is nothing left to prove.
 
@@ -375,9 +377,9 @@ MP 0/220                  480/520 MP
 
 **NINE OF CUPS**: Hold on! Curzon's found something! Don't leave your seats!
 
-**SEVEN OF SWORDS**: Curzon’s last stand — the McMahon-Hussein Pledge! A direct strike at the gentleman’s word. This could turn it around… or break him.
+**SEVEN OF SWORDS**: Curzon’s last stand — the McMahon-Hussein Pledge! A direct strike at the gentleman’s word. This is the move. This could turn it around… or break him completely.
 
-**FIVE OF PENTACLES**: Curzon goes all-in with 0 MP remaining! He is attempting a historical short squeeze by weaponizing a double-booked promise. This is an insolvency play, dragging the market down by exposing systemic fraud. The McMahon-Hussein pledge is a massive structural liability, but Balfour’s immunity absorbs these institutional shocks.
+**FIVE OF PENTACLES**: Curzon goes all-in with 0 MP remaining! Attempting a historical short squeeze by weaponizing a double-booked promise. This is an insolvency play, dragging the market down by exposing systemic fraud. The McMahon-Hussein pledge is a massive structural liability, but Balfour’s immunity absorbs these institutional shocks.
 
 **ACE OF WANDS**: The game is not over yet. 
 
@@ -388,9 +390,9 @@ MP 0/220                  480/520 MP
 ---
 
 
-**ARBITER**: FELLOWS, what a place to leave things! Balfour on his feet. Curzon on his last breath. All decided — or is it? ADVISORS — your verdict?
+**ARBITER**: FELLOWS, what a place to leave things! Balfour on his feet. Curzon on his last breath. It seems all decided — or is it? ADVISORS — your verdict?
 
-**NINE OF CUPS**: Balfour has the lead. Curzon has the crowd. Sometimes worth less than nothing. Sometimes it changes everything.
+**NINE OF CUPS**: Balfour has the lead. Curzon has the crowd. Sometimes that is worth less than nothing. Sometimes it changes everything.
 
 **SEVEN OF SWORDS**: Curzon just swung with everything he had left, straight at Balfour’s honor. For the first time, Balfour flinched. This fight is still alive. Barely. One right reaction from the Prime Minister and the whole room could shift. We’re on the edge.
 
@@ -414,48 +416,58 @@ MP 0/220                  480/520 MP
 
 #### DOCTORAL CANDIDATE ####
 
-**ID**: Tian  
-**Rank**: Undergraduate  
-**Credits**: 0  
-**Sunk Cost**: 7584 words  
+```
+ID: Tian  
+Rank: Undergraduate  
+Credits: 0  
+Sunk Cost: 7584 words  
+```
 
 ---
 
 #### PAYLOAD REDEMPTION ####
 
-**Progress**: ████████░░ 81%  
-**SUBJECT Sync**: 6.23%  
+```
+Progress: ████████░░ 81%  
+SUBJECT Sync: 6.23%  
+```
 
 ---
 
 #### PAYLOAD ESTIMATES ####
 
-**SEVEN OF SWORDS**: [10^16 ; 10^19] CUBEMETER * DAY  
-**FIVE OF PENTACLES**: [10^13 ; 10^17] 2026 USD  
-**NINE OF CUPS**: [10^8 ; 10^9] INDIVIDUAL HUMAN  
-**ACE OF WANDS**: [10^13 ; 10^17] BYTE  
+```
+SEVEN OF SWORDS: [10^16 ; 10^19] CUBEMETER * DAY  
+FIVE OF PENTACLES: [10^13 ; 10^17] 2026 USD  
+NINE OF CUPS: [10^8 ; 10^9] INDIVIDUAL HUMAN  
+ACE OF WANDS: [10^13 ; 10^17] BYTE  
+```
 
 ---
 
 #### FIGHTER ALIGNMENT ####
 
-**SEVEN OF SWORDS**:  
+```
+SEVEN OF SWORDS:  
 CURZON =====⚔️====|========== BALFOUR
  
-**FIVE OF PENTACLES**:  
+FIVE OF PENTACLES:  
 CURZON ==========|=======🪙== BALFOUR
 
-**NINE OF CUPS**:  
+NINE OF CUPS:  
 CURZON ==========|==🍸======= BALFOUR
 
-**ACE OF WANDS**:  
+ACE OF WANDS:  
 CURZON =====🪾====|========== BALFOUR
+```
 
 ---
 
 #### REDEMPTION SUCCESS PROGNOSIS ####
 
-**SEVEN OF SWORDS**: 29%  
-**FIVE OF PENTACLES**: 4%  
-**NINE OF CUPS**: 68%  
-**ACE OF WANDS**: 34%  
+```
+SEVEN OF SWORDS: 29%  
+FIVE OF PENTACLES: 4%  
+NINE OF CUPS: 68%  
+ACE OF WANDS: 34%  
+```  

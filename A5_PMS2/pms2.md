@@ -10,11 +10,13 @@ GENERATED: Q3 2026
 
 ---
 
-**ARBITER**: Uriel  
-**SEVEN OF SWORDS**: Grok  
-**FIVE OF PENTACLES**: Gemini  
-**NINE OF CUPS**: GPT-5.5  
-**ACE OF WANDS**: DeepSeek-V3  
+```
+ARBITER: Uriel  
+SEVEN OF SWORDS: Grok  
+FIVE OF PENTACLES: Gemini  
+NINE OF CUPS: GPT-5.5  
+ACE OF WANDS: DeepSeek-V3  
+```
 
 ---
 
@@ -172,32 +174,40 @@ GENERATED: Q3 2026
 
 #### DOCTORAL CANDIDATE ####
 
-**ID**: Tian  
-**Rank**: Undergraduate  
-**Credits**: 0  
-**Sunk Cost**: 5010 words  
+```
+ID: Tian  
+Rank: Undergraduate  
+Credits: 0  
+Sunk Cost: 5010 words  
+```
 
 ---
 
 #### PAYLOAD REDEMPTION ####
 
-**Progress**: ████░░░░░░ 33%  
-**SUBJECT Sync**: 41.13%  
+```
+Progress: ████░░░░░░ 33%  
+SUBJECT Sync: 41.13%  
+```
 
 ---
 
 #### PAYLOAD ESTIMATES ####
 
-**SEVEN OF SWORDS**: [10^15 ; 10^18] CUBEMETER * DAY  
-**FIVE OF PENTACLES**: [10^11 ; 10^15] 2026 USD  
-**NINE OF CUPS**: [10^8 ; 10^9] INDIVIDUAL HUMAN  
-**ACE OF WANDS**: [10^13 ; 10^17] BYTE  
+```
+SEVEN OF SWORDS: [10^15 ; 10^18] CUBEMETER * DAY  
+FIVE OF PENTACLES: [10^11 ; 10^15] 2026 USD  
+NINE OF CUPS: [10^8 ; 10^9] INDIVIDUAL HUMAN  
+ACE OF WANDS: [10^13 ; 10^17] BYTE  
+```
 
 ---
 
 #### REDEMPTION SUCCESS PROGNOSIS ####
 
-**SEVEN OF SWORDS**: 34%  
-**FIVE OF PENTACLES**: 19%  
-**NINE OF CUPS**: 76%  
-**ACE OF WANDS**: 23%  
+```
+SEVEN OF SWORDS: 34%  
+FIVE OF PENTACLES: 19%  
+NINE OF CUPS: 76%  
+ACE OF WANDS: 23%  
+```  
